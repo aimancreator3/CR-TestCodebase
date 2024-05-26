@@ -867,3 +867,17 @@
     - CentralCommand
     - NuclearOperative
     - SyndicateAgent
+
+- type: entity
+  parent: IDCardStandard
+  id: MercID
+  name: Merc ID card
+  description: Mercenary identification card for paperwork purposes
+  components:
+  - type: Sprite
+    layers:
+    - state: merc-id
+  - type: Access
+    tags:
+    - NuclearOperative
+    - SyndicateAgent

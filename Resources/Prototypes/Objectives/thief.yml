@@ -302,7 +302,7 @@
   - type: StealCondition
     stealGroup: ClothingEyesHudBeer
   - type: Objective
-    difficulty: 0.3
+    difficulty: 0.2
 
 - type: entity
   noSpawn: true
@@ -314,7 +314,7 @@
   - type: StealCondition
     stealGroup: Bible
   - type: Objective
-    difficulty: 0.4
+    difficulty: 0.6
 
 - type: entity                                      #Other subgroup
   noSpawn: true

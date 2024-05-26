@@ -429,7 +429,7 @@
   parent: BasePDA
   id: CaptainPDA
   name: captain PDA
-  description: Surprisingly no different from your PDA.
+  description: There a health analyzer installed. That really it. wow.
   components:
   - type: Pda
     id: CaptainIDCard
@@ -444,12 +444,16 @@
     borderColor: "#7C5D00"
   - type: Icon
     state: pda-captain
+  - type: HealthAnalyzer
+    scanDelay: 2
+    scanningEndSound:
+      path: "/Audio/Items/Medical/healthscanner.ogg"
 
 - type: entity
   parent: BasePDA
   id: HoPPDA
   name: head of personnel PDA
-  description: Looks like it's been chewed on.
+  description: Looks like it's been chewed on. There a trace of dog residue on health analyzer module.
   components:
   - type: Pda
     id: HoPIDCard
@@ -465,6 +469,10 @@
     accentHColor: "#447987"
   - type: Icon
     state: pda-hop
+  - type: HealthAnalyzer
+    scanDelay: 2
+    scanningEndSound:
+      path: "/Audio/Items/Medical/healthscanner.ogg"
 
 - type: entity
   parent: BasePDA
@@ -1063,3 +1071,23 @@
       whitelist:
         components:
           - Cartridge
+  - type: HealthAnalyzer
+    scanDelay: 1
+    scanningEndSound:
+      path: "/Audio/Items/Medical/healthscanner.ogg"
+
+- type: entity
+  parent: SyndiPDA
+  id: MercPDA
+  name: mercenary pda
+  description: a little gadjet with little to no use. has been cracked to include health analyzer.
+  components:
+  - type: Pda
+    id: MercID
+    state: pda-merc
+  - type: Icon
+    state: pda-merc
+  - type: HealthAnalyzer
+    scanDelay: 2
+    scanningEndSound:
+      path: "/Audio/Items/Medical/healthscanner.ogg"

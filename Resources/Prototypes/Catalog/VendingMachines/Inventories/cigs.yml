@@ -14,5 +14,7 @@
     CheapLighter: 4
     Lighter: 2
     FlippoLighter: 2
+  contrabandInventory:
+    FlippoEngravedLighter: 1 #a gift for someone unknown
   emaggedInventory:
     CigPackSyndicate: 1
