@@ -426,7 +426,7 @@
     state: pda-janitor
 
 - type: entity
-  parent: BasePDA
+  parent: BaseMedicalPDA
   id: CaptainPDA
   name: captain PDA
   description: There a health analyzer installed. That really it. wow.
@@ -444,13 +444,9 @@
     borderColor: "#7C5D00"
   - type: Icon
     state: pda-captain
-  - type: HealthAnalyzer
-    scanDelay: 2
-    scanningEndSound:
-      path: "/Audio/Items/Medical/healthscanner.ogg"
 
 - type: entity
-  parent: BasePDA
+  parent: BaseMedicalPDA
   id: HoPPDA
   name: head of personnel PDA
   description: Looks like it's been chewed on. There a trace of dog residue on health analyzer module.
@@ -469,10 +465,6 @@
     accentHColor: "#447987"
   - type: Icon
     state: pda-hop
-  - type: HealthAnalyzer
-    scanDelay: 2
-    scanningEndSound:
-      path: "/Audio/Items/Medical/healthscanner.ogg"
 
 - type: entity
   parent: BasePDA
@@ -1071,13 +1063,9 @@
       whitelist:
         components:
           - Cartridge
-  - type: HealthAnalyzer
-    scanDelay: 1
-    scanningEndSound:
-      path: "/Audio/Items/Medical/healthscanner.ogg"
 
 - type: entity
-  parent: SyndiPDA
+  parent: BaseMedicalPDA
   id: MercPDA
   name: mercenary pda
   description: a little gadjet with little to no use. has been cracked to include health analyzer.
@@ -1085,9 +1073,19 @@
   - type: Pda
     id: MercID
     state: pda-merc
+  - type: PdaBorderColor
+    borderColor: "#74de23"
   - type: Icon
     state: pda-merc
-  - type: HealthAnalyzer
-    scanDelay: 2
-    scanningEndSound:
-      path: "/Audio/Items/Medical/healthscanner.ogg"
+  - type: CartridgeLoader
+    uiKey: enum.PdaUiKey.Key
+    preinstalled:
+      - NotekeeperCartridge
+    cartridgeSlot:
+      priority: -1
+      name: Cartridge
+      ejectSound: /Audio/Machines/id_swipe.ogg
+      insertSound: /Audio/Machines/id_insert.ogg
+      whitelist:
+        components:
+          - Cartridge
