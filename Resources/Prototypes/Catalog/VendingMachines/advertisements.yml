@@ -107,6 +107,12 @@
     count: 9
 
 - type: localizedDataset
+  id: NTPDad
+  values:
+    prefix: advertisement-NTPD-
+    count: 5
+
+- type: localizedDataset
   id: DonutAds
   values:
     prefix: advertisement-donut-

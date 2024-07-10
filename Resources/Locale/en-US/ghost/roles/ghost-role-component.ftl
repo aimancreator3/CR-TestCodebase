@@ -143,6 +143,9 @@ ghost-role-information-cerberus-description = Obey your master. Spread chaos.
 ghost-role-information-ert-leader-name = ERT Leader
 ghost-role-information-ert-leader-description = Lead a team of specialists to resolve the station's issues.
 
+ghost-role-information-NTPD = NTPD
+ghost-role-information-NTPD-description = Get rid of any anomalys on the station, Keep an eye out for 0305-6.
+
 ghost-role-information-ert-chaplain-name = ERT Chaplain
 ghost-role-information-ert-chaplain-description = Assist with mourning to resolve the station's crew moral issues.
 
@@ -173,12 +176,19 @@ ghost-role-information-loneop-rules = You are a [color=red][bold]Team Antagonist
 ghost-role-information-behonker-name = Behonker
 ghost-role-information-behonker-description = You are an antagonist, bring death and honks to those who do not follow the honkmother.
 
+ghost-role-information-Meathunk-name = Meat Hunk
+ghost-role-information-Meathunk-description = Battle for honor! battle in the name of the great meat!
+
 ghost-role-information-hellspawn-name = Hellspawn
 ghost-role-information-hellspawn-description = Bring death to those who do not follow the great god Nar'Sie.
 
 ghost-role-information-Death-Squad-name = Death Squad Operative
 ghost-role-information-Death-Squad-description = One of Nanotrasen's top internal affairs agents. Await orders from CentComm or an official.
 ghost-role-information-Death-Squad-rules = You are required to obey orders given by your superior, you are effectively their [color=#6495ed][bold]Familiar[/bold][/color].
+
+ghost-role-information-merc-name = Mercenary
+ghost-role-information-merc-description = Captrue your target alive, you can kill anyone who gets in your way.
+ghost-role-information-merc-rules = You are required to obey orders given by META, you are effectively their [color=#789349][bold]Familiar[/bold][/color].
 
 ghost-role-information-SyndiCat-name = SyndiCat
 ghost-role-information-SyndiCat-description = You're the faithful trained pet of nuclear operatives with a microbomb. Serve your master to the death!

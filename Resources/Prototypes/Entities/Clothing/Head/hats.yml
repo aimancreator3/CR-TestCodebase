@@ -873,6 +873,22 @@
 
 - type: entity
   parent: ClothingHeadBase
+  id: ClothingHeadHatNTPDcap
+  name: NTPD cap
+  description: A grand, stylish offical NTPD cap.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/NTPDcap.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Hats/NTPDcap.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - WhitelistChameleon
+    - HamsterWearable
+
+- type: entity
+  parent: ClothingHeadBase
   id: ClothingHeadHatCentcomcap
   name: CentCom cap
   description: An extravagant, fancy Central Commander cap.

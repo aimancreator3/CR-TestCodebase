@@ -36,6 +36,20 @@
     - PinpointerSyndicateNuclear
     - DeathAcidifierImplanter
 
+- type: startingGear
+  id: Towegoutfit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitNanotrasen
+    back: ClothingBackpackHoldingNTPD
+    shoes: ClothingShoesBootsCombatFilled
+    neck: ClothingNeckCloakToweg
+    ears: ClothingHeadsetNTPD
+    id: NTPDPDA
+  storage:
+    back:
+    - BoxSurvivalSyndicate
+    - WeaponNTPDPulsePistol
+
 #Syndicate Operative Outfit - Basic
 - type: startingGear
   id: SyndicateOperativeGearBasic

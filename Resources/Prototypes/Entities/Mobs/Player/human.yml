@@ -93,3 +93,13 @@
     nameSegments:
     - names_ninja_title
     - names_ninja
+
+- type: entity
+  save: false
+  name: The one whom enjoys games
+  parent: BaseMobtoweg
+  id: MobHumantoweg
+  suffix: Human, Base
+  components:
+    - type: Loadout
+      prototypes: [Towegoutfit]

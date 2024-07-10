@@ -266,6 +266,33 @@
     startingCharge: 2000
 
 - type: entity
+  name: super pulse pistol
+  parent: BaseWeaponBatterySmall
+  id: WeaponNTPDPulsePistol
+  description: A state of the art energy pistol favoured as a sidearm by NTPD operatives.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Battery/NTPD_pulse_pistol.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-unshaded-4
+      map: ["enum.GunVisualLayers.MagUnshaded"]
+      shader: unshaded
+  - type: Clothing
+    sprite: Objects/Weapons/Guns/Battery/NTPD_pulse_pistol.rsi
+  - type: Gun
+    fireRate: 5
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
+  - type: HitscanBatteryAmmoProvider
+    proto: Pulse
+    fireCost: 1
+  - type: Battery
+    maxCharge: 400
+    startingCharge: 400
+
+- type: entity
   name: pulse carbine
   parent: [BaseWeaponBattery, BaseGunWieldable]
   id: WeaponPulseCarbine

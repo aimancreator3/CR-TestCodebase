@@ -131,6 +131,34 @@
     - type: Loadout
       prototypes: [ ERTLeaderGearEVALecter ]
 
+#NTPD
+- type: entity
+  id: RandomHumanoidSpawnerNTPDOP
+  name: NTPD operative
+  suffix: NTPD, Basic
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: NTPDeva
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstMilitaryLeader
+      - NamesLastMilitary
+    - type: RandomHumanoidSpawner
+      settings: NTPDERT
+
+- type: randomHumanoidSettings
+  id: NTPDERT
+  parent: EventHumanoidMindShielded
+  randomizeName: false
+  components: 
+    - type: Loadout
+      prototypes: [ NTPDGear ]
+    - type: RandomMetadata
+      nameSegments:
+        - NamesFirstMilitaryLeader
+        - NamesLastMilitary
+
 ## ERT Chaplain
 
 - type: entity

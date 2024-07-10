@@ -364,6 +364,32 @@
       - MobAlexander
 
 - type: entity
+  name: meat hunk Spawner
+  id: SpawnMobmeathunk
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+      - Mobmeathunk
+
+- type: entity
+  name: flesh runner Spawner
+  id: SpawnMobfleshrunner
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+      - fleshrunner
+
+- type: entity
   name: Shiva Spawner
   id: SpawnMobShiva
   parent: MarkerBase

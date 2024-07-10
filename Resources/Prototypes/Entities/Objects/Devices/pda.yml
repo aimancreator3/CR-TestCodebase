@@ -547,6 +547,21 @@
 
 - type: entity
   parent: BaseMedicalPDA
+  id: MercPDA
+  name: Merc PDA
+  description: The only Urban Solution is your death.
+  components:
+  - type: Pda
+    id: MercIDCard
+    state: pda-merc
+  - type: PdaBorderColor
+    borderColor: "#d7d7d0"
+    accentVColor: "#2a4b5b"
+  - type: Icon
+    state: pda-merc
+
+- type: entity
+  parent: BaseMedicalPDA
   id: ChemistryPDA
   name: chemistry PDA
   description: It has a few discolored blotches here and there.
@@ -653,6 +668,25 @@
     borderColor: "#00842e"
   - type: Icon
     state: pda-centcom
+
+- type: entity
+  parent: BasePDA
+  id: NTPDPDA
+  name: NTPD PDA
+  description: An NTPD PDA, now say that 5 times.
+  components:
+  - type: Pda
+    id: IDCardNTPD
+    state: pda-ntpd
+    penSlot:
+      startingItem: NTPDPen
+      whitelist:
+        tags:
+        - Write
+  - type: PdaBorderColor
+    borderColor: "#00842e"
+  - type: Icon
+    state: pda-ntpd
 
 - type: entity
   parent: CentcomPDA
