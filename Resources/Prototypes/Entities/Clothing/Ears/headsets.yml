@@ -92,6 +92,22 @@
 
 - type: entity
   parent: ClothingHeadset
+  id: ClothingHeadsetMETA
+  name: META headset
+  description: A headset used by META.
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionMerc
+      - EncryptionKeyStationMaster
+  - type: Sprite
+    sprite: Clothing/Ears/Headsets/Merc.rsi
+  - type: Clothing
+    sprite: Clothing/Ears/Headsets/Merc.rsi
+
+- type: entity
+  parent: ClothingHeadset
   id: ClothingHeadsetCentCom
   name: CentCom headset
   description: A headset used by the upper echelons of Nanotrasen.

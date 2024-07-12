@@ -173,6 +173,10 @@ ghost-role-information-loneop-name = Lone Operative
 ghost-role-information-loneop-description = You are a lone nuclear operative. Destroy the station!
 ghost-role-information-loneop-rules = You are a [color=red][bold]Team Antagonist[/bold][/color] with all other nuclear operatives. Covert syndicate agents are not guaranteed to help you.
 
+ghost-role-information-merc-name = Mercenary
+ghost-role-information-merc-description = you are an elite mercenary hired by Urban Solutions to captrue a target
+ghost-role-information-merc-rules = You are a [color=red][bold]mercenary[/bold][/color] You can kill anyone in your way but NOT your target, make sure the target is taken and shipped.
+
 ghost-role-information-behonker-name = Behonker
 ghost-role-information-behonker-description = You are an antagonist, bring death and honks to those who do not follow the honkmother.
 
@@ -185,10 +189,6 @@ ghost-role-information-hellspawn-description = Bring death to those who do not f
 ghost-role-information-Death-Squad-name = Death Squad Operative
 ghost-role-information-Death-Squad-description = One of Nanotrasen's top internal affairs agents. Await orders from CentComm or an official.
 ghost-role-information-Death-Squad-rules = You are required to obey orders given by your superior, you are effectively their [color=#6495ed][bold]Familiar[/bold][/color].
-
-ghost-role-information-merc-name = Mercenary
-ghost-role-information-merc-description = Captrue your target alive, you can kill anyone who gets in your way.
-ghost-role-information-merc-rules = You are required to obey orders given by META, you are effectively their [color=#789349][bold]Familiar[/bold][/color].
 
 ghost-role-information-SyndiCat-name = SyndiCat
 ghost-role-information-SyndiCat-description = You're the faithful trained pet of nuclear operatives with a microbomb. Serve your master to the death!

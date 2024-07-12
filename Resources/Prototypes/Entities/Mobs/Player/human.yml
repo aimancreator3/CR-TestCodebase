@@ -103,3 +103,13 @@
   components:
     - type: Loadout
       prototypes: [Towegoutfit]
+
+- type: entity
+  save: false
+  name: META
+  parent: BaseMobMETA
+  id: MobHumanMETA
+  suffix: Human, Base
+  components:
+    - type: Loadout
+      prototypes: [METAoutfit]

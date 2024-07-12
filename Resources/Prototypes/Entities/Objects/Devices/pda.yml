@@ -562,6 +562,21 @@
 
 - type: entity
   parent: BaseMedicalPDA
+  id: MercPDAmeta
+  name: META PDA
+  description: The only Urban Solution is your death.
+  components:
+  - type: Pda
+    id: MercIDCardmeta
+    state: pda-merc
+  - type: PdaBorderColor
+    borderColor: "#d7d7d0"
+    accentVColor: "#2a4b5b"
+  - type: Icon
+    state: pda-merc
+
+- type: entity
+  parent: BaseMedicalPDA
   id: ChemistryPDA
   name: chemistry PDA
   description: It has a few discolored blotches here and there.

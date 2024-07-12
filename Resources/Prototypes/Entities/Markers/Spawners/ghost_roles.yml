@@ -110,6 +110,22 @@
 
 - type: entity
   noSpawn: true
+  parent: BaseAntagSpawner
+  id: SpawnPointmerc
+  components:
+  - type: GhostRole
+    name: ghost-role-information-merc-name
+    description: ghost-role-information-merc-description
+    rules: ghost-role-information-merc-rules
+  - type: Sprite
+    sprite: Markers/jobs.rsi
+    layers:
+      - state: green
+      - sprite: Mobs/Species/Human/parts.rsi
+        state: merc
+
+- type: entity
+  noSpawn: true
   parent: SpawnPointLoneNukeOperative
   id: SpawnPointNukeopsCommander
   components:

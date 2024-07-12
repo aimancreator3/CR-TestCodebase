@@ -9,3 +9,15 @@
     - state: green
     - sprite: Objects/Fun/toys.rsi
       state: synb
+
+- type: entity
+  id: SpawnPointmerc2
+  parent: MarkerBase
+  name: merc
+  components:
+  - type: SpawnPoint
+  - type: Sprite
+    layers:
+    - state: green
+    - sprite: Mobs/Species/Human/parts.rsi
+      state: merc

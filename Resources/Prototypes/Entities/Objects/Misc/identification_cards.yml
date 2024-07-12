@@ -749,6 +749,20 @@
 
 - type: entity
   parent: IDCardStandard
+  id: MercIDCardmeta
+  name: META ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: Merc
+  - type: Access
+    tags:
+    - merc
+  - type: IdCard
+    jobTitle: Urban_Solutions_Scenario_Manager
+
+- type: entity
+  parent: IDCardStandard
   id: PsychologistIDCard
   name: psychologist ID card
   components:
