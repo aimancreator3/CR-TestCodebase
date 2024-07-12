@@ -84,6 +84,15 @@
 
 - type: entity
   parent: AirlockExternal
+  id: AirlockExternalLockedNTPD
+  suffix: External, Locked, NTPD
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsNTPD ]
+
+- type: entity
+  parent: AirlockExternal
   id: AirlockExternalCargoLocked
   suffix: External, Cargo, Locked
   components:

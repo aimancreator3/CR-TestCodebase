@@ -69,16 +69,12 @@
     state: icon
   - type: Clothing
     sprite: Clothing/Shoes/Boots/magboots-NTPD.rsi
-  - type: Magboots
-    toggleAction: ActionToggleMagbootsAdvanced
   - type: ClothingSpeedModifier
     walkModifier: 1
     sprintModifier: 1
-    enabled: true
-  - type: NoSlip
   - type: Tag
     tags:
-    - HighRiskItem
+    - WhitelistChameleon
   - type: StaticPrice
     price: 750
 
@@ -136,45 +132,5 @@
   description: Toggles the magboots on and off.
   components:
   - type: InstantAction
-    itemIconStyle: NoItem
-    event: !type:ToggleMagbootsEvent
-
-- type: entity
-  id: ActionToggleMagboots
-  parent: ActionBaseToggleMagboots
-  components:
-  - type: InstantAction
-    icon: { sprite: Clothing/Shoes/Boots/magboots.rsi, state: icon }
-    iconOn: { sprite : Clothing/Shoes/Boots/magboots.rsi, state: icon-on }
-
-- type: entity
-  id: ActionToggleMagbootsAdvanced
-  parent: ActionBaseToggleMagboots
-  components:
-  - type: InstantAction
-    icon: { sprite: Clothing/Shoes/Boots/magboots-advanced.rsi, state: icon }
-    iconOn: Clothing/Shoes/Boots/magboots-advanced.rsi/icon-on.png
-
-- type: entity
-  id: ActionToggleMagbootsAdvancedNTPD
-  parent: ActionBaseToggleMagboots
-  components:
-  - type: InstantAction
-    icon: { sprite: Clothing/Shoes/Boots/magboots-NTPD.rsi, state: icon }
-    iconOn: Clothing/Shoes/Boots/magboots-NTPD.rsi/icon-on.png
-
-- type: entity
-  id: ActionToggleMagbootsSci
-  parent: ActionBaseToggleMagboots
-  components:
-  - type: InstantAction
-    icon: { sprite: Clothing/Shoes/Boots/magboots-science.rsi, state: icon }
-    iconOn: Clothing/Shoes/Boots/magboots-science.rsi/icon-on.png
-
-- type: entity
-  id: ActionToggleMagbootsSyndie
-  parent: ActionBaseToggleMagboots
-  components:
-  - type: InstantAction
-    icon: { sprite: Clothing/Shoes/Boots/magboots-syndicate.rsi, state: icon }
-    iconOn: Clothing/Shoes/Boots/magboots-syndicate.rsi/icon-on.png
+    itemIconStyle: BigItem
+    event: !type:ToggleActionEvent
