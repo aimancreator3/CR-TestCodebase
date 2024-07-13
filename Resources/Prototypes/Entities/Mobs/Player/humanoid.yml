@@ -49,44 +49,6 @@
         - NamesFirstMilitaryLeader
         - NamesLastMilitary
 
-#merc
-
-- type: entity
-  id: RandomHumanoidSpawnermerc
-  name: Mercenary
-  components:
-    - type: Sprite
-      sprite: Clothing/Mask/merc.rsi
-      state: icon
-    - type: RandomMetadata
-      nameSegments:
-        - NamesFirstMilitaryLeader
-        - NamesLastMilitary
-    - type: RandomHumanoidSpawner
-      settings: Mercenaryghostrole
-
-- type: randomHumanoidSettings
-  id: Mercenaryghostrole
-  parent: EventHumanoidMindShielded
-  randomizeName: false
-  components:
-    - type: GhostRole
-      name: ghost-role-information-merc-name
-      description: ghost-role-information-merc-description
-      rules: ghost-role-information-merc-rules
-      raffle:
-        settings: short
-    - type: Loadout
-      prototypes: [ mercoutfit ]
-    - type: RandomMetadata
-      nameSegments:
-        - NamesFirstMilitaryLeader
-        - NamesLastMilitary
-      antagonist: true
-      setPreference: true
-      objective: roles-antag-syndicate-agent-objective
-
-
 ## ERT Leader
 
 - type: entity
@@ -167,34 +129,6 @@
         settings: short
     - type: Loadout
       prototypes: [ ERTLeaderGearEVALecter ]
-
-#NTPD
-- type: entity
-  id: RandomHumanoidSpawnerNTPDOP
-  name: NTPD operative
-  suffix: NTPD, Basic
-  components:
-    - type: Sprite
-      sprite: Markers/jobs.rsi
-      state: NTPDeva
-    - type: RandomMetadata
-      nameSegments:
-      - NamesFirstMilitaryLeader
-      - NamesLastMilitary
-    - type: RandomHumanoidSpawner
-      settings: NTPDERT
-
-- type: randomHumanoidSettings
-  id: NTPDERT
-  parent: EventHumanoidMindShielded
-  randomizeName: false
-  components: 
-    - type: Loadout
-      prototypes: [ NTPDGear ]
-    - type: RandomMetadata
-      nameSegments:
-        - NamesFirstMilitaryLeader
-        - NamesLastMilitary
 
 ## ERT Chaplain
 
@@ -903,3 +837,63 @@
         settings: short
     - type: Loadout
       prototypes: [ SyndicateOperativeGearCivilian ]
+
+## NTPD
+
+- type: entity
+  id: RandomHumanoidSpawnerNTPD
+  name: NTPD Operative
+  suffix: ERTRole, NTPD Operative
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: NTPDeva
+    - type: RandomMetadata
+      nameSegments:
+        - NamesFirstMilitaryLeader
+        - NamesLastMilitary
+    - type: RandomHumanoidSpawner
+      settings: NTPDop
+
+- type: randomHumanoidSettings
+  id: NTPDop
+  parent: EventHumanoidMindShielded
+  randomizeName: false
+  components:
+    - type: Loadout
+      prototypes: [ NTPDGear ]
+    - type: RandomMetadata
+      nameSegments:
+        - NamesFirstMilitaryLeader
+        - NamesLastMilitary
+
+# MERC
+
+- type: entity
+  id: RandomHumanoidSpawnerMercop
+  name: mercenary
+  suffix: merc
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: merc
+    - type: RandomMetadata
+      nameSegments:
+        - NamesFirstMilitaryLeader
+        - NamesLastMilitary
+    - type: RandomHumanoidSpawner
+      settings: Mercop
+
+- type: randomHumanoidSettings
+  id: Mercop
+  parent: EventHumanoidMindShielded
+  randomizeName: false
+  components:
+    - type: GhostRole
+      name: ghost-role-information-merc-name
+      description: ghost-role-information-merc-description
+      rules: ghost-role-information-merc-rules
+      raffle:
+        settings: short
+    - type: Loadout
+      prototypes: [ mercoutfit ]

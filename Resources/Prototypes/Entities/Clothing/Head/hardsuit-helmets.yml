@@ -205,32 +205,6 @@
     highPressureMultiplier: 0.6
     lowPressureMultiplier: 1000
 
-#META
-- type: entity
-  parent: ClothingHeadHardsuitWithLightBase
-  id: ClothingHeadHelmetHardsuitMETA
-  name: Urban Solutions Command Shell helment
-  description: There are small glyphs engraved in the helmet that make your head hurt when you look at them.
-  components:
-  - type: Sprite
-    sprite: Clothing/Head/Hardsuits/META.rsi
-  - type: Clothing
-    sprite: Clothing/Head/Hardsuits/META.rsi
-  - type: PointLight
-    color: "#00FFFF"
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.95
-        Slash: 0.95
-        Piercing: 0.95
-        Heat: 0.95
-        Radiation: 0.90
-        Caustic: 0.90
-  - type: PressureProtection
-    highPressureMultiplier: 0.6
-    lowPressureMultiplier: 1000
-
 #Warden's Hardsuit
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase

@@ -96,6 +96,13 @@
     - MagazineMagnumSubMachineGunPiercing
     - MagazineMagnumSubMachineGunPiercing
     - WeaponSubMachineGunVector
+    - CombatMedipen
+    - CombatMedipen
+    - CombatMedipen
+    - CombatMedipen
+    - SyringeEphedrine
+    - BruteAutoInjector
+    - BurnAutoInjector
 
 #Syndicate Operative Outfit - Basic
 - type: startingGear

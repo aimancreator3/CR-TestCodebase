@@ -174,7 +174,7 @@ ghost-role-information-loneop-description = You are a lone nuclear operative. De
 ghost-role-information-loneop-rules = You are a [color=red][bold]Team Antagonist[/bold][/color] with all other nuclear operatives. Covert syndicate agents are not guaranteed to help you.
 
 ghost-role-information-merc-name = Mercenary
-ghost-role-information-merc-description = you are an elite mercenary hired by Urban Solutions to captrue a target
+ghost-role-information-merc-description = You are an elite mercenary hired by Urban Solutions to capture a target.
 ghost-role-information-merc-rules = You are a [color=red][bold]mercenary[/bold][/color] You can kill anyone in your way but NOT your target, make sure the target is taken and shipped.
 
 ghost-role-information-behonker-name = Behonker
