@@ -475,7 +475,7 @@
   - type: Item
     heldPrefix: blue
   - type: IdCard
-    jobTitle: ERROR
+    jobTitle: NTPD operative
     jobIcon: JobIconNanotrasen
   - type: Access
     groups:
@@ -745,7 +745,7 @@
     tags:
     - merc
   - type: IdCard
-    jobTitle: merc
+    jobTitle: Urban Solutions Guardsman
 
 - type: entity
   parent: IDCardStandard
@@ -757,9 +757,9 @@
     - state: Merc
   - type: Access
     tags:
-    - merc
+    - metaAccess
   - type: IdCard
-    jobTitle: Urban_Solutions_Scenario_Manager
+    jobTitle: Urban Solutions Scenario Manager
 
 - type: entity
   parent: IDCardStandard
