@@ -267,3 +267,9 @@
   values:
     prefix: advertisement-medibot-
     count: 17
+
+- type: localizedDataset
+  id: ERPDrobeAds
+  values:
+    prefix: advertisement-erpdrobe-
+    count: 1
