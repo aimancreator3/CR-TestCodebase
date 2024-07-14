@@ -1,7 +1,7 @@
 - type: vendingMachineInventory
   id: ERPDrobeInventory
   startingInventory:
-    ClothingHandcuffs: 2
+    Handcuffs: 2
     ClothingMaskMuzzle: 2
     ClothingEyesBlindfold: 2
     ClothingUniformJumpskirtJanimaidmini: 2
@@ -18,6 +18,5 @@
     ClothingUniformJumpsuitKimono: 2
     ClothingUniformJumpskirtPerformer: 2
     ClothingShoesBootsPerformer: 2
-    MuteToxinChemistryBottle: 2
     ClothingOuterSuitShrineMaiden: 2
     ClothingHeadHatShrineMaidenWig: 2
