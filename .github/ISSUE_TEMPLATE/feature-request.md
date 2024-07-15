@@ -12,4 +12,3 @@ assignees: "TheDoctor1977"
 **Describe how your feature could be implemented. If you are unfamiliar with how SS14 works on a technical level, delete this section.**
 
 **Additional context**
-<!-- Add any other context or screenshots about the feature request here. -->
