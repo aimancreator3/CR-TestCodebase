@@ -2,8 +2,8 @@
 name: Report an Issue
 about: "..."
 title: ''
-labels: ''
-assignees: ''
+labels: "Status: Untriaged"
+assignees: "TheDoctor1977"
 
 ---
 
