@@ -23,6 +23,7 @@
     {"name": "eng_label"},
     {"name": "hop_label"},
     {"name": "hos_label"},
+    {"name": "Merc_label"},
     {"name": "medsci_label"},
     {"name": "med_label"},
     {"name": "miner_label"},

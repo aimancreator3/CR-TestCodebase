@@ -107,6 +107,12 @@
     count: 9
 
 - type: localizedDataset
+  id: NTPDad
+  values:
+    prefix: advertisement-NTPD-
+    count: 5
+
+- type: localizedDataset
   id: DonutAds
   values:
     prefix: advertisement-donut-
@@ -255,3 +261,15 @@
   values:
     prefix: advertisement-virodrobe-
     count: 3
+
+- type: localizedDataset
+  id: MedibotAds
+  values:
+    prefix: advertisement-medibot-
+    count: 17
+
+- type: localizedDataset
+  id: ERPDrobeAds
+  values:
+    prefix: advertisement-erpdrobe-
+    count: 15

@@ -74,15 +74,6 @@
       board: [ DoorElectronicsHydroponics ]
 
 - type: entity
-  parent: AirlockCommandLocked
-  id: AirlockServiceCaptainLocked
-  suffix: Captain, Locked
-  components:
-  - type: ContainerFill
-    containers:
-      board: [ DoorElectronicsCaptain ]
-
-- type: entity
   parent: AirlockExternal
   id: AirlockExternalLocked
   suffix: External, Locked
@@ -90,6 +81,15 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsExternal ]
+
+- type: entity
+  parent: AirlockExternal
+  id: AirlockExternalLockedNTPD
+  suffix: External, Locked, NTPD
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsNTPD ]
 
 - type: entity
   parent: AirlockExternal
@@ -271,6 +271,24 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsCentralCommand ]
+
+- type: entity
+  parent: AirlockNTPD
+  id: AirlockNTPDLocked
+  suffix: NTPD, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsNTPD ]
+
+- type: entity
+  parent: AirlockMerc
+  id: AirlockMercLocked
+  suffix: Merc, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsmerc ]
 
 - type: entity
   parent: AirlockCommand
@@ -636,6 +654,15 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsCentralCommand ]
+
+- type: entity
+  parent: AirlockNTPDGlass
+  id: AirlockNTPDGlassLocked
+  suffix: NTPD, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsNTPD  ]
 
 - type: entity
   parent: AirlockCommandGlass
@@ -1125,6 +1152,15 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsExternal ]
+
+- type: entity
+  parent: AirlockGlassShuttle
+  id: AirlockExternalGlassShuttlemercLocked
+  suffix: External, Glass, Docking, Locked, merc
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsmerc ]
 
 - type: entity
   parent: AirlockGlassShuttleSyndicate

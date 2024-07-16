@@ -7,7 +7,7 @@
   - type: InputMover
   - type: MobMover
   - type: Loadout
-    prototypes: [PassengerGear]
+    prototypes: [LimitedPassengerGear]
   - type: NpcFactionMember
     factions:
     - NanoTrasen
@@ -98,3 +98,20 @@
   - type: Cluwne
   - type: Speech
     speechVerb: Cluwne
+
+- type: entity
+  name: mercenary
+  parent: BaseMobHuman
+  id: Mobmerc
+  components:
+    - type: NpcFactionMember
+      factions:
+        - SimpleHostile
+    - type: Loadout
+      prototypes:
+        - modmercoutfit
+    - type: InputMover
+    - type: MobMover
+    - type: HTN
+      rootTask:
+        task: SimpleHumanoidHostileCompound

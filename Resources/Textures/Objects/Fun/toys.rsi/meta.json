@@ -11,6 +11,9 @@
       "name": "plushie_ratvar"
     },
     {
+      "name": "hacker_lizard"
+    },
+    {
       "name": "plushie_penguin"
     },
     {
@@ -52,6 +55,14 @@
     },
     {
       "name": "rainbowcarpplush"
+    },
+    {
+      "name": "rainbowcarpplush-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "rainbowcarpplush-inhand-right",
+      "directions": 4
     },
     {
       "name": "narplush"

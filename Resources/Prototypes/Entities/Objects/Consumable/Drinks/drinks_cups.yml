@@ -81,6 +81,15 @@
 
 - type: entity
   parent: DrinkBaseMug
+  id: coolMug
+  name: cool mug
+  description: A mug, it's brown with a S on it. You feel like someone put a lot of work in this.
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Drinks/seth_mug.rsi
+
+- type: entity
+  parent: DrinkBaseMug
   id: DrinkMugBlack
   name: black mug
   description: A sleek black mug.

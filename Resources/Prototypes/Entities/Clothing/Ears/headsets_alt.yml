@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   abstract: true
   parent: ClothingHeadset
   id: ClothingHeadsetAlt
@@ -25,6 +25,23 @@
     sprite: Clothing/Ears/Headsets/cargo.rsi
   - type: Clothing
     sprite: Clothing/Ears/Headsets/cargo.rsi
+
+- type: entity
+  parent: ClothingHeadsetAlt
+  id: ClothingHeadsetNTPD
+  name: NTPD headset
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyNTPD
+      - EncryptionKeyCentCom
+      - EncryptionKeyStationMaster
+      - EncryptionKeyBinary
+  - type: Sprite
+    sprite: Clothing/Ears/Headsets/NTPD.rsi
+  - type: Clothing
+    sprite: Clothing/Ears/Headsets/NTPD.rsi
 
 - type: entity
   parent: ClothingHeadsetAlt

@@ -4,6 +4,11 @@
   copies: 2
 
 - type: preloadedGrid
+  id: Shuttlemerc
+  path: /Maps/Shuttles/ShuttleEvent/merc.yml
+  copies: 2
+
+- type: preloadedGrid
   id: ShuttleCargoLost
   path: /Maps/Shuttles/ShuttleEvent/lost_cargo.yml
   copies: 2

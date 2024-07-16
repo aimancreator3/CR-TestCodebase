@@ -206,7 +206,7 @@
   - type: FingerprintMask
 
 - type: entity
-  parent: ClothingHandsBase
+  parent: [ClothingHandsBase, BaseToggleClothing]
   id: ClothingHandsGlovesSpaceNinja
   name: space ninja gloves
   description: These black nano-enhanced gloves insulate from electricity and provide fire resistance.
@@ -234,7 +234,31 @@
   - type: Thieving
     stripTimeReduction: 1
     stealthy: true
+  - type: ToggleClothing
+    action: ActionToggleNinjaGloves
   - type: NinjaGloves
+    abilities:
+    - components:
+      - type: BatteryDrainer
+      - type: StunProvider
+        noPowerPopup: ninja-no-power
+        whitelist:
+          components:
+          - Stamina
+      - type: EmagProvider
+        whitelist:
+          components:
+          - Airlock
+    - objective: StealResearchObjective
+      components:
+      - type: ResearchStealer
+    - objective: TerrorObjective
+      components:
+      - type: CommsHacker
+        threats: NinjaThreats
+    - objective: MassArrestObjective
+      components:
+      - type: CriminalRecordsHacker
 
 - type: entity
   parent: ClothingHandsGlovesColorBlack
@@ -386,6 +410,45 @@
         type: MeleeSpeechBoundUserInterface
   - type: StaticPrice
     price: 0
+
+- type: entity
+  parent: ClothingHandsButcherable
+  id: ClothingHandsgauntlets
+  name: gauntlets
+  description: These gloves allow you to punch incredibly hard.
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/gauntlets.rsi
+  - type: Clothing
+    sprite: Clothing/Hands/Gloves/gauntlets.rsi
+  - type: MeleeWeapon
+    autoAttack: true
+    attackRate: 1
+    damage:
+      types:
+       Blunt: 5
+    soundHit:
+      collection: metal
+    animation: WeaponArcFist
+    mustBeEquippedToUse: true
+  - type: Fiber
+    fiberMaterial: fibers-leather
+    fiberColor: fibers-blue
+  - type: FingerprintMask
+  - type: MeleeSpeech
+  - type: ActivatableUI
+    key: enum.MeleeSpeechUiKey.Key
+    verbOnly: true
+  - type: Actions
+  - type: UserInterface
+    interfaces:
+      enum.MeleeSpeechUiKey.Key:
+        type: MeleeSpeechBoundUserInterface
+  - type: StaticPrice
+    price: 0
+  - type: Construction
+    graph: Clothingcoolgauntlets
+    node: shoes
 
 - type: entity
   parent: ClothingHandsBase

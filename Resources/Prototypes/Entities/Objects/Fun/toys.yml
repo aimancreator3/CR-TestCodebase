@@ -184,6 +184,19 @@
     energy: 2
   - type: RgbLightController
     layers: [ 0 ]
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: bee-inhand-left
+        shader: unshaded
+      right:
+      - state: bee-inhand-right
+        shader: unshaded
+  - type: Clothing
+    clothingVisuals:
+      head:
+      - state: bee-equipped-HELMET
+        shader: unshaded
 
 - type: entity
   parent: BasePlushie
@@ -297,6 +310,17 @@
     size: Small
   - type: Sprite
     state: plushie_lizard_mirrored
+
+- type: entity
+  parent: PlushieLizard
+  id: PlushieLizardhacker
+  name: cool plushie
+  description: A cool plushie! you feel like it would be good at making stations.
+  components:
+  - type: Item
+    size: Small
+  - type: Sprite
+    state: hacker_lizard
 
 - type: entity
   parent: BasePlushie
@@ -543,6 +567,15 @@
     energy: 2
   - type: RgbLightController
     layers: [ 0 ]
+  - type: Item
+    heldPrefix: rainbowcarpplush
+    inhandVisuals:
+      left:
+      - state: rainbowcarpplush-inhand-left
+        shader: unshaded
+      right:
+      - state: rainbowcarpplush-inhand-right
+        shader: unshaded
 
 - type: entity
   parent: PlushieCarp
@@ -869,6 +902,7 @@
   - type: Sprite
   - type: Item
     size: Normal
+  - type: PacifismAllowedGun
 
 - type: entity
   parent: FoamWeaponBase
@@ -896,7 +930,7 @@
         - BulletFoam
     capacity: 1
     soundInsert:
-      path: /Audio/Weapons/drawbow2.ogg
+      path: /Audio/Items/bow_pull.ogg
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
@@ -1222,6 +1256,7 @@
     - type: StaminaDamageOnHit
       damage: 8
     - type: MeleeWeapon
+      wideAnimationRotation: -135
       damage:
         types:
           Blunt: 0

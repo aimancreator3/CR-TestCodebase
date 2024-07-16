@@ -14,21 +14,20 @@
       - id: Scalpel
 
 - type: entity
-  id: ClothingBackpackDuffelCBURNFilled
-  parent: ClothingBackpackDuffelCBURN
-  suffix: Filled
+  parent: ClothingBackpackHoldingNTPD
+  id: ClothingBackpackNTPDFilled
+  name: NTPD mission bag of holding
+  description: "The perfect thing for killing enemys and rewriting history!"
   components:
   - type: StorageFill
     contents:
-    - id: BoxSurvivalEngineering
-    - id: WeaponShotgunDoubleBarreled
-    - id: BoxShotgunIncendiary
-      amount: 2
-    - id: GrenadeFlashBang
-      amount: 2
-    - id: PillAmbuzolPlus
-    - id: PillAmbuzol
-      amount: 4
+      - id: DoubleEmergencyOxygenTankFilled
+      - id: DoubleEmergencyNitrogenTankFilled
+      - id: CombatMedipen
+        amount: 5
+      - id: MedkitCombatFilled
+      - id: EnergySword
+      - id: EnergyShield
 
 - type: entity
   parent: ClothingBackpackDuffelSyndicateMedicalBundle
@@ -319,38 +318,6 @@
       - id: PillAmbuzolPlus
       - id: PillAmbuzol
         amount: 3
-
-- type: entity
-  parent: ClothingBackpackDuffelSyndicateBundle
-  id: ClothingBackpackDuffelSyndicateOperative
-  name: operative duffelbag
-  components:
-  - type: StorageFill
-    contents:
-      - id: BoxSurvivalSyndicate
-      - id: WeaponPistolViper
-      - id: PinpointerSyndicateNuclear
-      - id: DeathAcidifierImplanter
-
-
-- type: entity
-  parent: ClothingBackpackDuffelSyndicateMedicalBundle
-  id: ClothingBackpackDuffelSyndicateOperativeMedic
-  name: operative medic duffelbag
-  description: A large duffel bag for holding extra medical supplies.
-  components:
-  - type: StorageFill
-    contents:
-      - id: SyndiHypo
-      - id: BoxSurvivalSyndicate
-      - id: SawAdvanced
-      - id: Cautery
-      - id: CombatKnife
-      - id: WeaponPistolViper
-      - id: PinpointerSyndicateNuclear
-      - id: HandheldHealthAnalyzer
-      - id: CombatMedipen
-      - id: DeathAcidifierImplanter
 
 - type: entity
   parent: ClothingBackpackDuffelSyndicateMedicalBundle
