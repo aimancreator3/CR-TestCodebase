@@ -53,6 +53,22 @@
     - DeathAcidifierImplanter
 
 - type: startingGear
+  id: modmercoutfit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMercenary
+    back: ClothingBackpackMerc
+    mask: ClothingMaskGasMerc
+    ears: ClothingHeadsetMerc
+    gloves: ClothingHandsMercGlovesCombat
+    shoes: ClothingShoesBootsMercFilled
+    id: MercPDA
+  inhand:
+    - SurvivalKnife
+  storage:
+    back:
+    - BoxSurvivalEngineering
+
+- type: startingGear
   id: Towegoutfit
   equipment:
     jumpsuit: ClothingUniformJumpsuitNanotrasen

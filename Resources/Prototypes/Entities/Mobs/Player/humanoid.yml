@@ -877,10 +877,6 @@
     - type: Sprite
       sprite: Markers/jobs.rsi
       state: merc
-    - type: RandomMetadata
-      nameSegments:
-        - NamesFirstMilitaryLeader
-        - NamesLastMilitary
     - type: RandomHumanoidSpawner
       settings: Mercop
 

@@ -18,7 +18,7 @@
   name: chat-radio-NTPD
   keycode: 'p'
   frequency: 1111
-  color: "#003154"
+  color: "#0525F9"
   longRange: true
 
 - type: radioChannel
